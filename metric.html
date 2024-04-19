@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI-Calculator</title>
+    <script defer src="metric.js"></script>
+    <link rel="stylesheet" href="metric.css" />
+    <script></script>
+    <link
+      rel="shortcut icon"
+      href="images/healthcare.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <h1 id="Header">BMI Calculator</h1>
+    <hr />
+    <h3>
+      This is a Calculator that calculates your Body Mass Index with a few
+      simple questions
+    </h3>
+    <p><b>Steps</b></p>
+
+    <ul>
+      <li>
+        Select your choice of measurment (
+        <a id="imperial" href="index.html">Imperial</a> or <b>Metric</b>)
+      </li>
+      <li>Select your biological gender (Male or Female)</li>
+      <li>Enter your weight and height</li>
+      <li>Click the Check BMI button</li>
+    </ul>
+
+    <img src="images/details.PNG" alt="Details" />
+    <div>
+      <p>
+        <input type="radio" name="gender" id="female" />
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="male" />
+        <label for="male">Male</label>
+      </p>
+    </div>
+    <div id="calc">
+      <p>
+        <b>Your Height:</b>
+
+        <input id="cm" placeholder="Cm" type="number" />
+      </p>
+      <p>
+        <b>Your Weight:</b>
+        <input id="Kg" placeholder="Kg" type="number" />
+      </p>
+    </div>
+    <button id="check">Check BMI</button>
+    <p id="result"></p>
+    <footer><button id="faq">FAQ</button></footer>
+  </body>
+</html>

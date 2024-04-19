@@ -1,0 +1,39 @@
+html {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #386590;
+}
+
+body {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: aliceblue;
+  width: 900px;
+  height: 700px;
+  margin: auto;
+}
+
+#calc {
+  color: #386590;
+}
+
+#check {
+  border-bottom: 40px;
+  color: #3b6b98;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(7.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+#check.hover {
+  background-color: #386590;
+}
+
+#imperial {
+  color: #ad1414;
+  text-decoration: none;
+  border-radius: 5px;
+}
