@@ -1,4 +1,7 @@
-document.getElementById("check").addEventListener("click", function () {
+document.getElementById("check").addEventListener("click", calculations);
+
+
+function calculations() {
   // Get the values from input fields
   var cmInput = parseFloat(document.getElementById("cm").value.trim());
   var kgInput = parseFloat(document.getElementById("Kg").value.trim());
@@ -28,4 +31,4 @@ document.getElementById("check").addEventListener("click", function () {
   } else {
     resultElement.textContent += " - Obese";
   }
-});
+}
