@@ -1,27 +1,26 @@
 document.getElementById("check").addEventListener("click", calculations);
-
-
+document.getElementById("").addEventListener("click", func);
 function calculations() {
   // Get the values from input fields
   var cmInput = parseFloat(document.getElementById("cm").value.trim());
   var kgInput = parseFloat(document.getElementById("Kg").value.trim());
   var gender = document.querySelector('input[name="gender"]:checked');
 
-  // Validate input fields
+  // check
   if (isNaN(cmInput) || isNaN(kgInput) || !gender) {
     alert("Please ensure all fields are filled correctly.");
-    return; // Exit the function
+    return;
   }
 
-  // Calculate BMI
+  // Calculate
   var heightInMeters = cmInput / 100;
   var bmi = kgInput / (heightInMeters * heightInMeters);
 
-  // Display the result on the webpage
+  // output
   var resultElement = document.getElementById("result");
-  resultElement.textContent = "Your BMI is: " + bmi.toFixed(2);
+  resultElement.textContent = "Your BMI is: " + bmi.toFixed(1);
 
-  // Additional feedback based on BMI value
+  // Feedback
   if (bmi < 18.5) {
     resultElement.textContent += " - Underweight";
   } else if (bmi >= 18.5 && bmi < 25) {
